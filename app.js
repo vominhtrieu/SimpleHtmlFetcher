@@ -19,7 +19,9 @@ app.use((_, res, next) => {
 app.post("/", async (req, res) => {
     try {
         console.log(req.body)
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({
+            args: ['--no-sandbox', '--disable-setuid-sandbox'],
+        });
         const [page] = await browser.pages();
         console.log(req.body.url);
         await page.goto(req.body.url, { waitUntil: 'domcontentloaded' });
