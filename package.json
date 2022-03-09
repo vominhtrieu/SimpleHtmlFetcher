@@ -1,0 +1,24 @@
+{
+    "name": "simplehtmlfetcher",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vominhtrieu/SimpleHtmlFetcher.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vominhtrieu/SimpleHtmlFetcher/issues"
+    },
+    "homepage": "https://github.com/vominhtrieu/SimpleHtmlFetcher#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.3",
+        "puppeteer": "^13.5.1"
+    }
+}
